@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Workshop"
+        tools:targetApi="31">
+        <activity
+            android:name=".Komentar_Rating"
+            android:exported="false"/>
+
+
+        <activity
+            android:name=".Korisnik_ZaOcena"
+            android:exported="false" />
+        <activity
+            android:name=".ZakazanoVozenje"
+            android:exported="false" />
+        <activity
+            android:name=".ListaKreiraniVozenja"
+            android:exported="false" />
+        <activity
+            android:name=".ListaZakazaniVozenja"
+            android:exported="false" />
+        <activity
+            android:name=".BookRide"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDb5eYBbPiu05tOtSgNqMYDxl88yKwqBc0" />
+
+        <activity
+            android:name=".VozacActivity"
+            android:exported="false"
+            android:parentActivityName=".LoginDriverActivity" />
+        <activity
+            android:name=".LoginDriverActivity"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".LoginUserActivity"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".RegisterDriverActivity"
+            android:exported="false"
+            android:parentActivityName=".RegisterActivity" />
+        <activity
+            android:name=".RegisterUserActivity"
+            android:exported="false"
+            android:parentActivityName=".RegisterActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

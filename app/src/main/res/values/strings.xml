@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Workshop</string>
+    <string name="ime_app">Carpooling Service 2024</string>
+    <string name="welcome_message">Добредојдовте во Car Connect.</string>
+    <string name="izbor_najava">Изберете најавете се на апликацијата.</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>
